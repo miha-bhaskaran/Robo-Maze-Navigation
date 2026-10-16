@@ -7,9 +7,7 @@ import cv2
 import numpy as np
 import pickle
 
-# ------------------------------------------------------------------------------
-#                  DO NOT MODIFY FUNCTION NAMES OR ARGUMENTS
-# ------------------------------------------------------------------------------
+
 
 def initialize_model(model_path=None):
     """
@@ -23,9 +21,6 @@ def initialize_model(model_path=None):
         model: Your trained model.
     """
 
-    # TODO: Load your trained model here.
-    # For example, if you saved your model using pickle or a deep learning framework,
-    # load it and return the model object.
    
     if model_path is None:
         raise ValueError("model_path must be provided. Pass it with --model_path.")
@@ -74,9 +69,7 @@ def predict(model, image):
     return int(results.flatten()[0])
 
 
-# ------------------------------------------------------------------------------
-#                      DO NOT MODIFY ANY CODE BELOW THIS LINE
-# ------------------------------------------------------------------------------
+
 
 def load_validation_data(data_path):
     """
